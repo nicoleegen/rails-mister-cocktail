@@ -3,7 +3,7 @@
 <br>
 <br>
 <% @cocktails.each do |cocktail| %>
-  <h2><%= cocktail.name %></h2>
+  <h2><%= link_to cocktail.name, cocktail %></h2>
 <% end %>
 <br>
 <br>

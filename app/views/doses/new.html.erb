@@ -1,12 +1,15 @@
-<h1>Add Doses to your Cocktails</h1>
+<h1>Add Ingredients to your Cocktail</h1>
 <br>
 <br>
 <br>
-<br>
-<h2>Add a new Ingredient for <%= @cocktail.name %></h2>
+<h2>Add new Ingredients for <%= @cocktail.name %></h2>
       <%= simple_form_for [ @cocktail, @dose ] do |f| %>
-        <%= f.input :ingredient, collection: Ingredient.all, input_html: { multiple: true, class: 'multiple-select' }, include_hidden: false %>
-        <%= f.submit "Add ingredient", class: 'btn btn-primary' %>
+        <%= f.input :description, placeholder: "for example cl or grams " %>
+        <%= f.association :ingredient %>
+        <%= f.submit "Add ingredients", class: 'btn btn-primary' %>
       <% end %>
+<br>
+<br>
+<%= link_to 'back to all cocktails', cocktails_path %>
 
 <p>Find me in app/views/doses/new.html.erb</p>

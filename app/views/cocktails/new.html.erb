@@ -1,5 +1,12 @@
-<%= form_for(@cocktail) do |t| %>
+<h2>Name your new cocktail</h2>
+<br>
+<br>
+<%= simple_form_for(@cocktail) do |t| %>
   <%= t.label :name %>
+  <br>
   <%= t.text_field :name %>
   <%= t.submit%>
 <% end %>
+<br>
+<br>
+<%= link_to 'back to all cocktails', cocktails_path %>
