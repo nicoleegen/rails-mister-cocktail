@@ -7,13 +7,30 @@
 <br>
 <br>
 <br>
-<% @cocktails.each do |cocktail| %>
-  <h2><%= link_to cocktail.name, cocktail %></h2>
-<% end %>
+<div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dedqvrx2d/image/upload/v1592312736/cocktail_jpv2ao.jpg)">
+  <% @cocktails.each do |cocktail| %>
+    <h2><%= link_to cocktail.name, cocktail %></h2>
+  <% end %>
+</div>
 <br>
 <br>
 <br>
 <%= link_to 'add new cocktail', new_cocktail_path %>
+<br>
+<br>
+<br>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
 
 
 

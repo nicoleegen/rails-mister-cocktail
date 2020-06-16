@@ -12,3 +12,11 @@
 @import "components/index";
 @import "pages/index";
 
+
+h1, h2, h3, a, p {
+  color: #981c6a;
+  &:hover {
+  text-decoration: none;
+  color: black;
+  }
+}
