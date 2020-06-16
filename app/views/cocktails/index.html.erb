@@ -7,10 +7,14 @@
 <br>
 <br>
 <br>
-<div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dedqvrx2d/image/upload/v1592312736/cocktail_jpv2ao.jpg)">
-  <% @cocktails.each do |cocktail| %>
-    <h2><%= link_to cocktail.name, cocktail %></h2>
-  <% end %>
+<div class="row">
+  <div class="col-12">
+    <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dedqvrx2d/image/upload/v1592312736/cocktail_jpv2ao.jpg)">
+      <% @cocktails.each do |cocktail| %>
+        <h2><%= link_to cocktail.name, cocktail %></h2>
+      <% end %>
+    </div>
+  </div>
 </div>
 <br>
 <br>
@@ -27,8 +31,8 @@
     <a href="#"><i class="fab fa-twitter"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
-  <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  <div class="footer-links">
+    This footer is made with Love !
   </div>
 </div>
 
